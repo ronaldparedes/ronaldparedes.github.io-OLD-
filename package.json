@@ -1,0 +1,11 @@
+{
+  "name": "ronaldparedes.github.io",
+  "main": "index.js",
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1"
+  }
+}

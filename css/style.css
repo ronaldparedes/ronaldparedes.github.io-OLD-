@@ -8,7 +8,7 @@
 .site-header__background{
   background-image: url("https://source.unsplash.com/1600x900/?bolivia");
   background-size: cover;
-  filter: brightness(.6) grayscale(.7);
+  filter: brightness(.7) grayscale(.4);
   background-color: #000;
   width: 100%;
   height: 100%;
@@ -20,6 +20,8 @@
 .site-header h1{
   font-family: sans-serif;
   font-size: 4rem;
+  font-weight: 300;
   text-shadow: 3px 3px 2px #111;
-  color: #CCC;
+  color: #EEE;
+  transform: translateY(-100%);
 }

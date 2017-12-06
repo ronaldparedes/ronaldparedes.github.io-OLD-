@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Montserrat:200|Pacifico|Rock+Salt');
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
 
 .site-header{
   position: relative;
@@ -10,6 +10,7 @@
 }
 .site-header__background{
   position: absolute;
+  left:0;
   width: 100%;
   height: 100%;
   z-index: -1;

@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
+    imageminMozjpeg = require('imagemin-mozjpeg'),
     browserSync = require('browser-sync').create();
     
 gulp.task('watch', () => {
@@ -13,8 +14,13 @@ gulp.task('watch', () => {
 
 gulp.task('OptimizeImg', () => {
   return gulp.src('./img/railroad/**/*')
-    .pipe(imagemin([
-      imagemin.jpegtran({progressive: true})
-    ]))
-    .pipe(gulp.dest('./img/OptImg/'));
+    .pipe(imagemin(
+      [
+      imageminMozjpeg()
+      //imagemin.jpegtran({progressive: true})
+      ],
+      {
+        verbose: true 
+      }))
+    .pipe(gulp.dest('./img/optImg/'));
 });

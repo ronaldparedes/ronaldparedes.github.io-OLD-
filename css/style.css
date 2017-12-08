@@ -43,19 +43,22 @@ body{
 
 @keyframes slide-in {
   0%{
-    transform: translateX(-200%);
+    opacity: 0;
+    transform: translateX(-500px);
   }
   
   85%{
-    transform: translateX(2%);
+    transform: translateX(10px);
   }
   100%{
+    opacity: 1;
     transform: translateX(0px);
   }
 }
 .site-header__content{
+  transform: translateY(-500px);
   opacity: 0;
-  animation: fade-in 1.5s forwards, slide-in 1.5s forwards ease-out;
+  animation: slide-in 1.5s forwards ease-out;
   will-change: transform, opacity;
 }
 .site-header h1{
